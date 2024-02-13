@@ -99,32 +99,25 @@ html, body {
     }
 
     footer {
-        display: flex;
+        /* display: flex; */
         flex-direction: row;
     }
 
     footer div {
         padding: 4em;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
         /* border: solid yellow; */
     }
     
-    footer p {
-        /* border: solid yellow; */
-        align-self: flex-start;
-        /* flex-basis: 0; */
-        display: inline-flex;
-    }
 
-    footer img {
-        align-self: flex-end;
-        /* border: solid yellow; */
-    }
-}
+} 
 
 #flexbox {
     display: flex;
     flex-direction: column;
-    border: solid yellow;
+    /* border: solid yellow; */
 }
 
 #canvas {
@@ -138,9 +131,10 @@ html, body {
     
 }
 
-footer {
+@media screen and (max-width:800px) {
+    footer > a > div {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: solid yellow;
+    flex-direction: column-reverse;
+    align-items: center;
+    }
 }
