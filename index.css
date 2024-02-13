@@ -97,6 +97,24 @@ html, body {
         grid-column: 2 / 2 span;
         grid-row: 3 / 3 span;
     }
+
+    footer {
+        flex-direction: row;
+    }
+
+    footer div {
+        padding: 4em;
+        border: solid yellow;
+    }
+    
+    footer p {
+        border: solid yellow;
+    }
+
+    footer img {
+        align-self: flex-end;
+        border: solid yellow;
+    }
 }
 
 #flexbox {
@@ -107,11 +125,17 @@ html, body {
 
 #canvas {
     display: flex;
-    
+    justify-content: center;
     /* border: solid yellow; */
 }
 
 #canvas #circle {
     align-self: center;
+    
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    /* border: solid yellow; */
+}
