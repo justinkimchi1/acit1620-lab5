@@ -76,7 +76,7 @@ html, body {
         display: grid;
         grid-template-rows: auto repeat(4, 250px);
         grid-template-columns: 1fr 1fr 1fr;
-        border: solid yellow;
+        
     }
 
     #grid h2 {
@@ -99,21 +99,25 @@ html, body {
     }
 
     footer {
+        display: flex;
         flex-direction: row;
     }
 
     footer div {
         padding: 4em;
-        border: solid yellow;
+        /* border: solid yellow; */
     }
     
     footer p {
-        border: solid yellow;
+        /* border: solid yellow; */
+        align-self: flex-start;
+        /* flex-basis: 0; */
+        display: inline-flex;
     }
 
     footer img {
         align-self: flex-end;
-        border: solid yellow;
+        /* border: solid yellow; */
     }
 }
 
@@ -137,5 +141,6 @@ html, body {
 footer {
     display: flex;
     flex-direction: column;
-    /* border: solid yellow; */
+    flex-wrap: wrap;
+    border: solid yellow;
 }
